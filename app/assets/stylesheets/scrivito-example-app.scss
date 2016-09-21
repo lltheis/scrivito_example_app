@@ -40,23 +40,6 @@ $bg-colors: (
   }
 }
 
-.footer {
-  color: #bbb;
-  background-color: #333;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  .footer-logo {
-    background: image_url('scrivito-logo-sw.svg') no-repeat center;
-    display: block;
-    width: 110px;
-    height: 30px;
-  }
-
-  .footer-logo:hover {
-    background: image_url('scrivito-logo.svg') no-repeat center;
-  }
-
   li {
     border-top: solid 1px #555555;
   }
@@ -69,7 +52,6 @@ $bg-colors: (
   .footer-explanation-text {
     color: #f7ecb6;
   }
-}
 
 .margin-top-10 {
   margin-top: 10px;
