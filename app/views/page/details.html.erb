@@ -29,3 +29,7 @@
 <%= scrivito_details_for("ID") do %>
   <%= @obj.id %>
 <% end %>
+
+<%= scrivito_details_for("URL") do %>
+  <%= scrivito_url(@obj) %>
+<% end %>
