@@ -9,7 +9,9 @@
 
 @import "ekko-lightbox";
 
-@import "scrivito-example-app";/*****GENERAL ******/
+@import "scrivito-example-app";
+
+/*****GENERAL ******/
 body {
 	font-family: "Century Gothic", Arial, sans-serif;
 	position: relative;
@@ -37,7 +39,91 @@ a:hover {
 	text-decoration: none;
 }
 
+/*****NAVIGATION ******/
+.navbar-inverse {
+	background-color: #FFF;
+	border-color: none;
+	border-bottom-color: #FFF;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	display: inline-block;
+	z-index: 1;
+}
 
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+	transition: background-color 400ms,color 400ms;
+	-webkit-transition:background-color 400ms,color 400ms;
+}
+
+.navbar-header a {
+	color: #816f5a;
+	font-family: Futura, Arial, sans-serif;
+	letter-spacing: .05em;
+	font-size: 1.5em;
+}
+
+.nav-other {
+	letter-spacing: .05em;
+	padding: 0px 10px 0px 10px;
+}
+
+.nav-home {
+	padding-top: 10px;
+}
+
+.navbar>ul>li>a {
+	color: #fff;
+}
+
+.anchor {
+	padding-top: 65px;
+}
+
+.navbar-toggle {
+	background-color: #816f5a;
+	border: #FFF;
+	border-radius: 0px;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
+.nav,
+.navbar,
+.navbar-inverse .navbar-inner {
+filter:none!important;
+background-image: none;
+}
+
+.mapping-nav {
+	list-style:none;
+	font-size: 1.25em;
+	letter-spacing: 1px;
+}
+
+.dropit {
+  list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 150px;
+    list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dropit .dropit-open .dropit-submenu { 
+	display: block; 
+}
 
 /**** PROJECTS ****/
 .works-content {
@@ -126,6 +212,10 @@ a:hover {
 	padding: 10px;
 }
 
+
+.modal-backdrop {
+	position: inherit;
+}
 
 
 /*****FOOTER ******/
