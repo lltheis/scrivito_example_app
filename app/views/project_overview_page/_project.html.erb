@@ -1,0 +1,22 @@
+<!-- OUR WORK SECTION -->        
+<div class="container">
+  <div class="row no-gutter">
+    <div class="col-sm-8">
+      <div class="big-box">&nbsp;</div>
+    </div>
+    <div class="col-sm-4">
+      <div class="row no-gutter">
+				<%= scrivito_medium_dialog do %>
+				<div class="col-sm-2">
+					<%= scrivito_image_tag(@obj, :image, class: "img-responsive works-img") %>
+				</div>
+  				<div class="col-sm-2">
+  					<%= scrivito_details_for "Title" do %>
+    				<%= scrivito_tag :div, @obj, :project_title, class: "works-title" %>
+    			</div>
+  				<% end %>
+				<% end %>
+			</div>
+    </div><!-- /row works -->
+  </div>
+</div><!-- /row -->

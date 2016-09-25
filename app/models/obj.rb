@@ -1,7 +1,7 @@
 class Obj < Scrivito::BasicObj
 
   def self.valid_page_classes_beneath(parent_path)
-    [Page, BlogPage, BlogPostPage]
+    [Page, ProjectOverviewPage, ProjectPage, BlogPage, BlogPostPage]
   end
 
   def valid_widget_classes_for(field_name)
