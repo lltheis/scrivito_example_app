@@ -92,9 +92,17 @@ a:hover {
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
 .nav,
 .navbar,
-.navbar-inverse .navbar-inner {
+.navbar-inverse .navbar-inner,
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li:hover > a {
 filter:none!important;
 background-image: none;
+text-shadow: none;
+color: inherit;
+}
+
+.navbar-brand > img {
+  display: inline;
 }
 
 .mapping-nav {
@@ -123,6 +131,10 @@ background-image: none;
 
 .dropit .dropit-open .dropit-submenu { 
 	display: block; 
+}
+
+.header-text {
+	color: inherit;
 }
 
 /**** PROJECTS ****/
