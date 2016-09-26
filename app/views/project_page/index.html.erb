@@ -1,10 +1,3 @@
-<%= scrivito_tag_list :ul, @obj, :toclist do |list, child| %>
-  <%= list.tag :li do %>
-    <%= link_to child.display_title, scrivito_path(child) %>
-  <% end %>
-<% end %>
-
-
 <!-- OUR WORK SECTION -->        
 <div class="container-fluid">
   <div class="row no-gutter">
@@ -13,8 +6,6 @@
     </div>
     <div class="col-sm-4">
 	    <%= scrivito_image_tag(@obj, :image, class: "img-responsive") %>
-    </div>
-    <div class="works-content">
     	<%= scrivito_tag(:div, @obj, :project_title, class: "works-title") %><br>
     	<%= scrivito_tag(:div, @obj, :project_date) %>
     	<%= scrivito_tag(:div, @obj, :location) %>

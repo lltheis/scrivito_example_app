@@ -1,13 +1,20 @@
-<!-- OUR WORK SECTION -->        
-<div class="container">
   <div class="row no-gutter">
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       <div class="big-box">&nbsp;</div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-5">
       <div class="row no-gutter">
-      	<%= render(partial: "project", collection: @project) %>
-      </div><!-- /row works -->
-    </div>
-  </div><!-- /row -->
-</div><!-- /container -->
+        <%= link_to(scrivito_path(project_page)) do %>
+        <div class="col-sm-6">
+          <%= scrivito_image_tag(@obj, :image, class: "img-responsive works-img") %>
+        </div>
+        <div class="col-sm-1">
+          <%= scrivito_tag :div, @obj, :project_title, class: "works-title" %>
+        </div>
+        <% end %>
+      </div>
+        
+      </div>
+    </div><!-- /row works -->
+  </div>
+
