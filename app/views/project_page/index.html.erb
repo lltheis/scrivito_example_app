@@ -4,5 +4,21 @@
   <% end %>
 <% end %>
 
-<%= scrivito_tag :h1, @obj, :title %>
-<%= scrivito_tag :div, @obj, :body %>
+
+<!-- OUR WORK SECTION -->        
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="col-sm-8">
+      <div>&nbsp;</div>
+    </div>
+    <div class="col-sm-4">
+	    <%= scrivito_image_tag(@obj, :image, class: "img-responsive") %>
+    </div>
+    <div class="works-content">
+    	<%= scrivito_tag(:div, @obj, :project_title, class: "works-title") %><br>
+    	<%= scrivito_tag(:div, @obj, :project_date) %>
+    	<%= scrivito_tag(:div, @obj, :location) %>
+    	<%= scrivito_tag(:div, @obj, :description) %>
+    </div>
+  </div>
+</div>

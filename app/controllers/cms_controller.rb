@@ -9,6 +9,11 @@ class CmsController < ApplicationController
   end
   helper_method :home_page
 
+  def project_page
+    @project_page ||= ProjectPage.all.first
+  end
+  helper_method :project_page
+
   def blog_page
     @blog_page ||= BlogPage.all.first
   end
