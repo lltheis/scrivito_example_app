@@ -1,20 +1,18 @@
-  <div class="row no-gutter">
-    <div class="col-sm-7">
-      <div class="big-box">&nbsp;</div>
+<div class="row no-gutter">
+  <div class="col-sm-7">
+    <div class="big-box">&nbsp;</div>
+  </div>
+  <div class="col-sm-5">
+    <div class="row no-gutter">
+      <% @project_pages.each do |project_page| %>
+      <%= link_to(scrivito_path(project_page)) do %>
+        <div class="col-sm-4">
+          <% if project_page.image.present? %>
+            <%= image_tag(scrivito_path(project_page.image), {class: "img-responsive"} ) %>
+          <% end %>
+        </div>
+      <% end %>
+      <% end %>
     </div>
-    <div class="col-sm-5">
-      <% project_page.each do |project_page| %>
-      <div class="row no-gutter">
-        <%= link_to(scrivito_path(project_page)) do %>
-        <div class="col-sm-6">
-          <%= scrivito_image_tag(@obj, :image, class: "img-responsive works-img") %>
-        </div>
-        <div class="col-sm-1">
-          <%= scrivito_tag :div, @obj, :project_title, class: "works-title" %>
-        </div>
-        <% end %>
-      </div>
-       <% end %> 
-      </div>
-    </div><!-- /row works -->
+  </div>
   </div>
