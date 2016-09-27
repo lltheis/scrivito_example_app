@@ -3,6 +3,7 @@
       <div class="big-box">&nbsp;</div>
     </div>
     <div class="col-sm-5">
+      <% project_page.each do |project_page| %>
       <div class="row no-gutter">
         <%= link_to(scrivito_path(project_page)) do %>
         <div class="col-sm-6">
@@ -13,8 +14,7 @@
         </div>
         <% end %>
       </div>
-        
+       <% end %> 
       </div>
     </div><!-- /row works -->
   </div>
-
