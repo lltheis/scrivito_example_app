@@ -6,12 +6,12 @@
     <div class="row">
       <% @project_pages.each do |project_page| %>
         <%= link_to(scrivito_path(project_page)) do %>
-        <div class="col-sm-5 works-content">
+        <div class="col-sm-8 works-content">
           <% if project_page.image.present? %>
             <%= image_tag(scrivito_path(project_page.image), {class: "img-responsive"} ) %>
           <% end %>
         </div>
-        <div class="col-sm-2 works-content">
+        <div class="col-sm-4 works-content">
           <% if project_page.project_title.present? %>
             <%= scrivito_value(project_page.project_title) %>
           <% end %>
