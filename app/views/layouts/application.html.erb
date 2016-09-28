@@ -9,16 +9,12 @@
   <%= csrf_meta_tags %>
   <%= scrivito_head_tags %>
 
-
-
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.jpg">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <%= auto_discovery_link_tag(:atom, scrivito_path(@obj.blog, format: :atom)) if @obj.respond_to?(:blog) %>
-
-  <%= javascript_include_tag("https://maps.googleapis.com/maps/api/js?key=#{Rails.application.google_maps_api_key}") %>
 
   <%= javascript_include_tag("application") %>
 </head>
@@ -42,5 +38,15 @@
 
   </div>
   <%= scrivito_body_tags %>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+
 </body>
 </html>

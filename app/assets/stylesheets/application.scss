@@ -17,7 +17,6 @@ body {
 	position: relative;
 	padding-top: 50px;
 	color: #b8b4ae;
-	/*background-color: #fff;*/
 }
 
 h1, 
@@ -39,7 +38,136 @@ a:hover {
 	text-decoration: none;
 }
 
+/*****RESPONSIVENESS******/
+
+@media screen and (max-width:992px) {
+	.scape-sidenav.scape-collapse {
+		display: none;
+	}
+}
+
+	@media screen and (min-width:993px) {
+	.scape-sidenav.scape-collapse {
+		display: block !important;
+	}
+}
+
+@media (min-width:993px) {
+	.scape-hide-large {
+		display: none !important;
+	}
+}
+
+
 /*****NAVIGATION ******/
+.scape-sidenav {
+	-webkit-transition: 
+		background-color .3s,
+		color .15s,
+		box-shadow .3s,
+		opacity .3s;
+	transition:
+		background-color .3s,
+		color .15s,
+		box-shadow .3s,
+		opacity .3s;
+}
+
+.scape-sidenav {
+	height: 100%;
+	width: 200px;
+	background-color: #fff;
+	position: fixed !important;
+	z-index: 1;
+	overflow: auto;
+}
+
+.scape-sidenav a {
+	padding: 4px 2px 4px 16px;
+}
+
+.scape-sidenav a:hover {
+	background-color: #ccc;
+}
+
+.scape-sidenav a,.scape-dropnav a {
+	display: block;
+}
+
+.scape-sidenav .scape-dropdown-hover:hover,.scape-sidenav .scape-dropdown-hover:first-child,.scape-sidenav .scape-dropdown-click:hover,.scape-dropnav a:hover {
+	background-color: #ccc;
+	color: #000;
+}
+
+.scape-sidenav .scape-dropdown-hover,.scape-sidenav .scape-dropdown-click {
+	width: 100%;
+}
+
+.scape-sidenav .scape-dropdown-hover .scape-dropdown-content,.scape-sidenav .scape-dropdown-click .scape-dropdown-content {
+	min-width: 100%;
+}
+
+.scape-card-2, {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+
+.scape-animate-left {
+	position: relative;
+	-webkit-animation: animateleft .4s;
+	animation: animateleft .4s;
+}
+
+@-webkit-keyframes animateleft {
+	from {
+		left: -300px;
+		opacity: 0;
+	}
+
+	to {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+.scape-closenav,.scape-opennav {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.scape-opennav,.scape-closenav {
+	color: inherit;
+}
+
+.scape-opennav:hover,.scape-closenav:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
+.scape-opennav,.scape-closenav {
+	-webkit-transition: background-color .3s,color .15s,box-shadow .3s,opacity .3s;
+	transition: background-color .3s,color .15s,box-shadow .3s,opacity .3s;
+}
+
+.scape-container {
+	padding: .01em 16px;
+}
+
+.scape-container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.scape-main,#main {
+	transition: margin-left .4s;
+}
+
+
+
 .navbar-inverse {
 	background-color: #FFF;
 	border-color: none;

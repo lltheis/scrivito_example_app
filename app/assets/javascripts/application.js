@@ -14,6 +14,5 @@
 //= require jquery_ujs
 //= require scrivito
 //= require bootstrap-sprockets
-//= require gmaps
 //= require ekko-lightbox
 //= require scrivito-example-app
