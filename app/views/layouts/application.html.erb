@@ -16,7 +16,7 @@
 
   <%= auto_discovery_link_tag(:atom, scrivito_path(@obj.blog, format: :atom)) if @obj.respond_to?(:blog) %>
 
-  <%= javascript_include_tag("application") %>
+  
 </head>
 <body>
   <div class="wrapper">
@@ -38,15 +38,6 @@
 
   </div>
   <%= scrivito_body_tags %>
-
-<script>
-function w3_open() {
-    document.getElementById("mySidenav").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-}
-</script>
-
+<%= javascript_include_tag("application") %>
 </body>
 </html>

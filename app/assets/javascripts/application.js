@@ -16,7 +16,4 @@
 //= require bootstrap-sprockets
 //= require ekko-lightbox
 //= require scrivito-example-app
-
-$('.carousel').carousel({
-  interval: false
-})
+//= require pushy.min

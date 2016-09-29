@@ -1,4 +1,4 @@
-<div id="<%= id %>" class="carousel slide" data-ride="carousel">
+<div id="<%= id %>" class="carousel slide" data-ride="carousel" data-interval="false">
   <ol class="carousel-indicators">
     <% widget.panels.each_with_index do |panel, i| %>
       <li data-target="#<%= id %>" data-slide-to="<%= i %>" class="<%= "active" if i == 0 %>"></li>

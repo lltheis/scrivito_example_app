@@ -1,20 +1,24 @@
-
-
-<nav class="scape-sidenav scape-collapse scape-card-2 scape-animate-left" style="width:250px;" id="mySidenav">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="scape-closenav scape-large scape-hide-large">Close &times;</a>
-    <a href="#">
-      <%= link_to(scrivito_path(home_page), class: "navbar-logo") do %>
-        <%= image_tag("Logo.png", alt: "scape design studio") %>
-      <% end %>
-    </a>
-    <a href="/__scrivito/985204a985c01ea1">our work</a>
-    <a href="#">works in progress</a>
-    <a href="#">publications</a>
-    <a href="/__scrivito/cbe4a6c60885a997">contact</a>
+<nav class="pushy pushy-left">
+    <ul>
+        <!-- Submenu -->
+        <li class="pushy-submenu">
+            <a href="#">Submenu</a>
+            <ul>
+                <li class="pushy-link"><a href="#">Item 1</a></li>
+                <li class="pushy-link"><a href="#">Item 2</a></li>
+                <li class="pushy-link"><a href="#">Item 3</a></li>
+            </ul>
+        </li>
+        <li class="pushy-link"><a href="#">Item 1</a></li>
+        <li class="pushy-link"><a href="#">Item 2</a></li>
+    </ul>
 </nav>
 
-<div class="scape-main">
-<header class="scape-container">
-  <span class="scape-opennav scape-hide-large" onclick="w3_open()">&#9776;</span>
-</header>
+<!-- Site Overlay -->
+<div class="site-overlay"></div>
+
+<!-- Your Content -->
+<div id="container">
+    <!-- Menu Button -->
+    <div class="menu-btn">&#9776; Menu</div>
+</div>

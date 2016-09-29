@@ -1,32 +1,3 @@
-$bg-colors: (
-  (bg-color-white, #ffffff, #555555),
-  (bg-color-light, #f7f7f7, #555555),
-  (bg-color-dark, #bbbbbb, #ffffff),
-  (bg-color-darker, #555555, #ffffff),
-);
-
-@each $bg-color-name, $bg-color-code, $color-code in $bg-colors {
-  .#{$bg-color-name} {
-    background-color: $bg-color-code !important;
-    color: $color-code !important;
-  }
-}
-
-.section-padding-small {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.section-padding-medium {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.section-padding-large {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .margin-top-0 {
   margin-top: 0px;
 }
