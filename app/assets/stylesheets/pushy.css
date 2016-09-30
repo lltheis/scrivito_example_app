@@ -9,7 +9,7 @@
   height: 100%;
   top: 0;
   z-index: 9999;
-  background: #191918;
+  background: #816f5a;
   overflow: auto;
   visibility: hidden;
   -webkit-overflow-scrolling: touch;
@@ -17,22 +17,41 @@
 }
 .pushy a {
   display: block;
-  color: #b3b3b1;
+  color: #ffffff;
   padding: 15px 30px;
   text-decoration: none;
-  outline: 0;
+  font-size: 1.2em;
 }
+
 .pushy a:hover {
   color: #FFF;
 }
 .pushy ul:first-child {
   margin-top: 10px;
 }
+
+.pushy ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .pushy.pushy-left {
   left: 0;
 }
 .pushy.pushy-right {
   right: 0;
+}
+
+.pushy__close {
+  font-size: 18px;
+  float: right;
+  color: #ffffff;
+  margin: -5px 10px;
+}
+
+.menu-btn {
+  padding-left: 20px;
+  color: #816f5a;
 }
 
 /* Menu Movement */

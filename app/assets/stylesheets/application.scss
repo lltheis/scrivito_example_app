@@ -1,6 +1,8 @@
 /*
  *= require scrivito
  *= require scrivito_advanced_editors
+ *= require_tree .
+ *= require_self
  */
 
 @import "bootstrap-sprockets";
@@ -15,7 +17,7 @@
 body {
 	font-family: "Century Gothic", Arial, sans-serif;
 	position: relative;
-	padding-top: 50px;
+	padding-top: 15px;
 	color: #b8b4ae;
 }
 
