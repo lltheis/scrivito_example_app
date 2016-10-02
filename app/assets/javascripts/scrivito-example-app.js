@@ -48,4 +48,3 @@ var ScrivitoExampleApp = function () {
 jQuery(document).ready(function() {
   ScrivitoExampleApp.init();
 });
-

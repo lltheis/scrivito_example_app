@@ -14,11 +14,20 @@
 @import "scrivito-example-app";
 
 /*****GENERAL ******/
+html {
+	position: relative;
+	min-height: 100%;	
+}
+
 body {
 	font-family: "Century Gothic", Arial, sans-serif;
-	position: relative;
 	padding-top: 15px;
 	color: #b8b4ae;
+	margin-bottom: 60px;
+}
+
+header {
+	flex: 0 0 auto;
 }
 
 h1, 
@@ -41,6 +50,50 @@ a:hover {
 }
 
 /*****RESPONSIVENESS******/
+.container {
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .carousel-control .glyphicon-menu-left,
+	.carousel-control .glyphicon-menu-right,
+	.carousel-control .icon-prev,
+	.carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+
+	.carousel-control .glyphicon-menu-left,
+	.carousel-control .icon-prev {
+    margin-left: -10px;
+  }
+
+	.carousel-control .glyphicon-menu-right,
+	.carousel-control .icon-next {
+    margin-right: -10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width:992px) {
 	.scape-sidenav.scape-collapse {
@@ -168,113 +221,34 @@ a:hover {
 	transition: margin-left .4s;
 }
 
-
-
-.navbar-inverse {
-	background-color: #FFF;
-	border-color: none;
-	border-bottom-color: #FFF;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	display: inline-block;
-	z-index: 1;
-}
-
-
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-	transition: background-color 400ms,color 400ms;
-	-webkit-transition:background-color 400ms,color 400ms;
-}
-
-.navbar-header a {
-	color: #816f5a;
-	font-family: Futura, Arial, sans-serif;
-	letter-spacing: .05em;
-	font-size: 1.5em;
-}
-
-.nav-other {
-	letter-spacing: .05em;
-	padding: 0px 10px 0px 10px;
-}
-
-.nav-home {
-	padding-top: 10px;
-}
-
-.navbar>ul>li>a {
-	color: #fff;
-}
-
-.anchor {
-	padding-top: 65px;
-}
-
-.navbar-toggle {
-	background-color: #816f5a;
-	border: #FFF;
-	border-radius: 0px;
-}
-
-.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
-.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
-.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
-.nav,
-.navbar,
-.navbar-inverse .navbar-inner,
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a,
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li:hover > a {
-filter:none!important;
-background-image: none;
-text-shadow: none;
-color: inherit;
-}
-
-.navbar-brand > img {
-  display: inline;
-}
-
-.mapping-nav {
-	list-style:none;
-	font-size: 1.25em;
-	letter-spacing: 1px;
-}
-
-.dropit {
-  list-style: none;
-	padding: 0;
-	margin: 0;
-}
-.dropit .dropit-trigger { position: relative; }
-.dropit .dropit-submenu {
-    position: absolute;
-    top: 100%;
-    left: 0; /* dropdown left or right */
-    z-index: 1000;
-    display: none;
-    min-width: 150px;
-    list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.dropit .dropit-open .dropit-submenu { 
-	display: block; 
-}
-
-.header-text {
-	color: inherit;
-}
-
 /**** CAROUSEL ****/
-.carousel-control.right {
+.carousel {
+	float: right;
+}
+
+.carousel-control {
+  top: 50%;
+}
+
+.carousel-control.right, .carousel-control.left {
 	background-image: none;
 }
 
-.carousel,.item,.active{height:100%;}
-.carousel-inner{height:100%;}
-.fill{width:100%;height:100%;background-position:center;background-size:cover;}
+.carousel-inner > .item > img {
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-height: 800px;
+  width: auto;
+}
+
+.home-img {
+
+}
 
 /**** PROJECTS ****/
 .works-content {
@@ -371,6 +345,9 @@ color: inherit;
 
 /*****FOOTER ******/
 .footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	padding: 15px;
 }
 
