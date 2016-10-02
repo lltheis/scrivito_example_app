@@ -21,7 +21,7 @@ html {
 
 body {
 	font-family: "Century Gothic", Arial, sans-serif;
-	padding-top: 15px;
+	padding: 15px 0px 15px 0x;
 	color: #b8b4ae;
 	margin-bottom: 60px;
 }
@@ -263,7 +263,7 @@ a:hover {
 .works-img {
 	margin: auto;
 	position: relative;
-	padding: 0px;
+	padding: 10px;
 }
 
 .info {
@@ -296,12 +296,18 @@ a:hover {
 	color: #fff;
 }
 
-.popover-title {
-	color: #333;
+.previous-page {
+	float: right;
+		color: #816f5a;
 }
 
-.popover-content {
-	color: #414141;
+/**** PUBLICATIONS ****/
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #816f5a;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 }
 
 
