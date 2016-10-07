@@ -1,7 +1,6 @@
-class PanelWidget < Widget
+class DocWidget < Widget
 
-  attribute :content, :widgetlist
-  attribute :title, :string, default: "New Panel"
+  attribute :title, :string, default: "Doc"
 
   def self.valid_container_classes
     [PanelGroupWidget]
@@ -12,7 +11,7 @@ class PanelWidget < Widget
   end
 
   def self.info_text_for_thumbnail
-    "Panel for display inside a panel group."
+    "This is Laura's test"
   end
 
 end

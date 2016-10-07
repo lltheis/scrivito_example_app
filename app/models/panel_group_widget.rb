@@ -11,6 +11,7 @@ class PanelGroupWidget < Widget
 
   attribute :layout_type, :enum, values: layout_types, default: layout_types.first
   attribute :panels, :widgetlist
+  attribute :docs, :link
 
   default_for :panels do |attribute, scrivito_user|
     [
@@ -20,8 +21,16 @@ class PanelGroupWidget < Widget
     ]
   end
 
+   default_for :docs do |attribute, scrivito_user|
+    [
+      DocWidget.new(title: "test 1"),
+      DocWidget.new(title: "test 2"),
+      DocWidget.new(title: "test 3"),
+    ]
+  end
+
   def valid_widget_classes_for(field_name)
-    [PanelWidget]
+    [PanelWidget, DocWidget]
   end
 
   def text_extract

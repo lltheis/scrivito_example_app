@@ -17,26 +17,22 @@
 html {
 	position: relative;
 	min-height: 100%;	
-}
+	}
 
-body {
-	font-family: "Century Gothic", Arial, sans-serif;
-	padding: 15px 0px 15px 0x;
-	color: #b8b4ae;
-	margin-bottom: 60px;
-}
+	body {
+		font-family: "Century Gothic", Arial, sans-serif;
+		padding: 15px 0px 15px 0x;
+		color: #b8b4ae;
+		margin-bottom: 60px;
+	}
 
-header {
-	flex: 0 0 auto;
-}
-
-h1, 
-h2 {
-	font-family: "Century Gothic", Arial, sans-serif;
-	color: #816f5a;
-	margin-top: 5px;
-	margin-bottom: 10px;
-}
+	h1, 
+	h2 {
+		font-family: "Century Gothic", Arial, sans-serif;
+		color: #816f5a;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
 
 a {
 	color: #816f5a;
@@ -57,30 +53,32 @@ a:hover {
 	padding-left: 10px;
 }
 
+.container img {
+}
+
+.carousel-control .glyphicon-menu-left,
+.carousel-control .glyphicon-menu-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+	width: 30px;
+	height: 30px;
+	margin-top: -10px;
+	font-size: 30px;
+}
+
+.carousel-control .glyphicon-menu-left,
+.carousel-control .icon-prev {
+	margin-left: -10px;
+}
+
+.carousel-control .glyphicon-menu-right,
+.carousel-control .icon-next {
+	margin-right: -10px;
+}
 
 @media (min-width: 768px) {
   .container {
     width: 100%;
-  }
-
-  .carousel-control .glyphicon-menu-left,
-	.carousel-control .glyphicon-menu-right,
-	.carousel-control .icon-prev,
-	.carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -10px;
-    font-size: 30px;
-  }
-
-	.carousel-control .glyphicon-menu-left,
-	.carousel-control .icon-prev {
-    margin-left: -10px;
-  }
-
-	.carousel-control .glyphicon-menu-right,
-	.carousel-control .icon-next {
-    margin-right: -10px;
   }
 }
 
@@ -89,6 +87,7 @@ a:hover {
     width: 100%;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 100%;
