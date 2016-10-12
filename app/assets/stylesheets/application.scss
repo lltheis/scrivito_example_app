@@ -51,6 +51,8 @@ a:hover {
 	margin-left: 0px;
 	padding-right: 10px;
 	padding-left: 10px;
+	width: 100%;
+	z-index: 20;
 }
 
 .container img {
@@ -92,6 +94,14 @@ a:hover {
 @media screen and (min-width: 565px)
 and (orientation: landscape) {
 	.scape-carousel {
+		width: 25%; 
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 565px)
+and (orientation: landscape) {
+	.scape-carousel {
 		width: 50%; 
 		margin: auto;
 	}
@@ -103,24 +113,6 @@ and (orientation: landscape) {
 		width: 90%; 
 		margin: auto;
 	}
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width:992px) {
@@ -354,18 +346,22 @@ and (orientation: landscape) {
 	padding: 10px;
 }
 
+ul li.my_css_class a:before {
+  content: '$'; // also using icon fonts is possible
+}
 
 .modal-backdrop {
 	position: inherit;
 }
-
 
 /*****FOOTER ******/
 .footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	padding: 15px;
+	padding: 0em 2em 0em 2em;
+	font-size: .9em;
+	line-height: 1em;
 }
 
 .footer-left {
