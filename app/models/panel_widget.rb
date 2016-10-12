@@ -2,6 +2,7 @@ class PanelWidget < Widget
 
   attribute :content, :widgetlist
   attribute :title, :string, default: "New Panel"
+  attribute :doc, :widgetlist
 
   def self.valid_container_classes
     [PanelGroupWidget]

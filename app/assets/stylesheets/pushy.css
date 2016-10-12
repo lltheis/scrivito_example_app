@@ -16,7 +16,7 @@
   /* enables momentum scrolling in iOS overflow elements */
 }
 .pushy a {
-  display: block;
+  display: inline-block;
   color: #ffffff;
   padding: 15px 30px;
   text-decoration: none;
