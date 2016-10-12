@@ -255,7 +255,7 @@ and (orientation: landscape) {
 
 /**** PROJECTS ****/
 .works-content {
-	padding-top: 15px;
+	padding-bottom: 2em;
 }
 
 .works-title {
@@ -284,6 +284,10 @@ and (orientation: landscape) {
 
 .project {
 	padding: 0px;
+}
+
+.project-details {
+	margin: 0px 5px 0px 5px;
 }
 
 .project-label {
