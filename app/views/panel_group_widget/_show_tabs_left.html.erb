@@ -2,17 +2,7 @@
   <div class="col-sm-6">
   </div>
   <div class="col-sm-6">
-    <div class="col-sm-4">
-      <div class="tab-content bg-color-white">
-        <% widget.panels.each_with_index do |panel, i| %>
-          <%= scrivito_tag(:div, panel, :doc, {
-            id: "#{id}-#{i}",
-            class: "tab-pane fade in #{"active" if i == 0}",
-          }) %>
-        <% end %>
-      </div>
-    </div>
-    <div class="col-sm-4">
+    <div class="col-sm-6">
       <div class="tab-content bg-color-white">
         <% widget.panels.each_with_index do |panel, i| %>
           <%= scrivito_tag(:div, panel, :content, {
@@ -22,7 +12,7 @@
         <% end %>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-6">
       <ul class="nav nav-pills nav-stacked">
         <% widget.panels.each_with_index do |panel, i| %>
           <li class="<%= "active" if i == 0 %>">
@@ -35,4 +25,3 @@
     </div>
   </div>
 </div>
-
