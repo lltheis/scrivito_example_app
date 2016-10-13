@@ -10,6 +10,7 @@ gem 'rails', '4.2.6'
 gem 'sass-rails', '~> 5.0'
 gem 'scrivito', '1.5.1'
 gem 'scrivito_advanced_editors'
+gem 'scrivito_linklist_widget'
 gem 'secure_headers'
 gem 'uglifier', '>= 1.3.0'
 
