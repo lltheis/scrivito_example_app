@@ -133,6 +133,12 @@ and (orientation: landscape) {
 
 
 /*****NAVIGATION ******/
+.menu {
+	position: absolute;
+	font-size: 1.75em;
+	color: #b8b4ae;
+}
+
 .scape-sidenav {
 	-webkit-transition: 
 		background-color .3s,
@@ -319,7 +325,6 @@ and (orientation: landscape) {
 }
 
 .publications-link {
-	float: right;
 	font-size: 1.2em;
   font-style: italic;
   padding-top: .5em;

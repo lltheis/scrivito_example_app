@@ -9,7 +9,7 @@
         <% widget.panels.each_with_index do |panel, i| %>
           <%= scrivito_tag(:div, panel, :content, {
             id: "#{id}-#{i}",
-            class: "tab-pane fade in #{"active" if i == 0}",
+            class: "tab-pane fade in publications-link #{"active" if i == 0}",
           }) %>
         <% end %>
       </div>
