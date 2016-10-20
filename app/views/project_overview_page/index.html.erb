@@ -4,7 +4,7 @@
   </div>
   <div class="col-sm-5">
     <div class="row">
-      <% @project_pages.each do |project_page| %>
+      <% @project_pages.sort_by(&:project_title).each do |project_page| %>
         <%= link_to(scrivito_path(project_page)) do %>
         <div class="col-sm-8 works-content works-img">
           <% if project_page.image.present? %>
@@ -19,6 +19,5 @@
       <% end %>
       <% end %>
     </div>
-
   </div>
 </div>
