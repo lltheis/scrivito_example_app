@@ -16,6 +16,14 @@ class ProjectPage < Obj
   	!(display_breadcrumb_and_title == "no")
   end
 
+  def description_for_editor
+    if binary? 
+      name
+    else
+      project_title.presence || "<untitled #{obj_class}>"
+    end
+  end
+
 end
 
 
