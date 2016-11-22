@@ -21,9 +21,10 @@ html {
 
 	body {
 		font-family: "Century Gothic", Arial, sans-serif;
-		padding: 15px 0px 15px 0px;
-		color: #b8b4ae;
+		padding: 30px 0px 15px 0px;
+		color: #816f5a;
 		margin-bottom: 60px;
+		font-size: 14.5px;
 	}
 
 	h1, 
@@ -45,6 +46,11 @@ a:hover {
 	text-decoration: none;
 }
 
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
 /*****RESPONSIVENESS******/
 .container {
 	margin-right: 0px;
@@ -56,6 +62,11 @@ a:hover {
 }
 
 .container img {
+}
+
+.no-padding {
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 .carousel-control .glyphicon-menu-left,
@@ -265,14 +276,23 @@ and (orientation: landscape) {
 }
 
 .works-title {
-	font-size: 1.25em;
+	font-size: 1.4em;
 	color: #816f5a;
+	padding-top: .75em;
+	font-weight: 400;
+}
+
+.works-specs {
+	font-style: italic;
+	color: #b8b4ae;
+	font-size: 14px;
+	padding-bottom: .75em;
 }
 
 .works-img {
 	margin: auto;
 	position: relative;
-	padding: 10px;
+	padding-bottom: 20%;
 }
 
 .info {

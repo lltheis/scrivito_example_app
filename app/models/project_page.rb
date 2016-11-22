@@ -2,9 +2,10 @@ class ProjectPage < Obj
  	attribute :image, :reference
 	attribute :project_title, :string
 	attribute :project_date, :string
-  attribute :location, :string
+  attribute :specs, :string
   attribute :description, :string
   attribute :child_order, :referencelist
+  attribute :sort_order, :integer
   attribute :display_breadcrumb_and_title, :enum, values: %w[yes no], default: "no"
   attribute :tags, :stringlist
 

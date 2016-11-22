@@ -3,6 +3,10 @@
     <%= scrivito_tag :div, @obj, :project_title %>
   <% end %>
 
+	<%= scrivito_details_for "Sort Order" do %>
+    <%= scrivito_tag :div, @obj, :sort_order %>
+  <% end %>
+
 	<%= scrivito_details_for("Tags") do %>
 	  <%= scrivito_tag(:div, @obj, :tags) %>
 	<% end %>
