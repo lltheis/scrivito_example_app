@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require scrivito
+//= require scrivito_codemirror_editor
 //= require bootstrap-sprockets
 //= require ekko-lightbox
 //= require scrivito-example-app

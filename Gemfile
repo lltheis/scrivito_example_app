@@ -13,6 +13,7 @@ gem 'scrivito_advanced_editors'
 gem 'scrivito_linklist_widget'
 gem 'secure_headers'
 gem 'uglifier', '>= 1.3.0'
+gem 'scrivito_codemirror_editor'
 
 
 group :development do
