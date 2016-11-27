@@ -1,16 +1,16 @@
-<div class="site-header push col-sm-6">
-  <div class="menu-btn">
-      <%= image_tag("Logo.png", style: "max-height: 100px;", alt: "scape design studio") %>
-      <span class="menu"></span>
-  </div>
-</div>
+<header class="site-header push col-sm-6">
+  <div class="menu-btn">&nbsp; &#9776;</div>
+</header>
   <nav class="pushy pushy-left">
-    <ul>
-      <li class="pushy-link pushy__close">
-        <span class="glyphicon glyphicon-remove">
-      </li>
+  <ul>
+    <li class="pushy-link pushy__close">
+      <%= image_tag("Logo.png", style: "max-height: 100px; float: left;", alt: "scape design studio") %>
+      <span style="float: right;" class="glyphicon glyphicon-remove">
+    </li>
+  </ul>
+    <ul class="links-bottom">
       <li class="pushy-link">
-        <%= link_to(scrivito_path(home_page), class: "navbar-brand navbar-logo") do %>
+        <%= link_to(scrivito_path(home_page), class: " ") do %>
         home
         <% end %>
       </li>
@@ -24,7 +24,7 @@
         <a href="/__scrivito/d128a9a9afa32934">publications</a> 
       </li>      
       <li class="pushy-link">
-        <a href="#">about</a> 
+        <a href="/__scrivito/fe73d580782056a3">about</a> 
       </li>
       <li class="pushy-link">
         <a href="/__scrivito/cbe4a6c60885a997">contact</a>
