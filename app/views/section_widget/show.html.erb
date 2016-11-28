@@ -5,8 +5,10 @@
       "section-padding-large"
     when "medium"
       "section-padding-medium"
-    else
+    when
       "section-padding-small"
+    else
+      "section-padding-none"
     end
 %>
 <section class="<%= padding_css %> bg-color-<%= widget.bg_color %>"
