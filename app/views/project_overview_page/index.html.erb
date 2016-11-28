@@ -1,7 +1,9 @@
-  <div class="col-sm-6 no-padding">
-    <div class="row">
-      <% @project_pages.sort_by(&:sort_order).each do |project_page| %>
-        <%= link_to(scrivito_path(project_page)) do %>
+<div class="col-sm-5 no-padding">
+</div>
+<div class="col-sm-6 no-padding">
+  <div>
+    <% @project_pages.sort_by(&:sort_order).each do |project_page| %>
+      <%= link_to(scrivito_path(project_page)) do %>
         <div class="col-sm-4 works-content works-title no-padding">
           <% if project_page.project_title.present? %>
             <%= scrivito_value(project_page.project_title) %>
@@ -14,5 +16,5 @@
         </div>
       <% end %>
       <% end %>
-    </div>
   </div>
+</div>
