@@ -77,6 +77,10 @@ a:hover {
   opacity: .75;
 }
 
+.carousel-indicators {
+	top: 92%;
+}
+
 .carousel-control .glyphicon-menu-left,
 .carousel-control .glyphicon-menu-right,
 .carousel-control .icon-prev,
@@ -84,7 +88,7 @@ a:hover {
 	width: 30px;
 	height: 30px;
 	margin-top: -10px;
-	font-size: 50px;
+	font-size: 30px;
 }
 
 .carousel-control .glyphicon-menu-left,
@@ -304,7 +308,9 @@ a:hover {
 	float: right;
 	color: #816f5a;
 	padding-bottom: 2em;
+	font-size: 1.4em;
 }
+
 
 /**** PUBLICATIONS ****/
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
